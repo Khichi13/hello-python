@@ -1,5 +1,6 @@
 """ The main module. """
 import functions as fn
+from oop import Train
 
 
 def main():
@@ -20,6 +21,13 @@ def main():
         fn.conditions(n)
     except ValueError:
         print('Please enter a digit')
+
+    print("Creating a train")
+    train = Train(f"{name}'s Laari")
+    print(f'Created {train.name}')
+    train.run()
+    train.explode()
+    train.run()
 
 if __name__ == '__main__':
     main()
